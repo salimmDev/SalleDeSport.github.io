@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-------------------------Navbar------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light  w-100 m-auto d-flex justify-content-between align-items-center nav-fixed">
+            <a class="navbar-brand logo-navbar ps-5" href="./index.html"><img class="logo" src="./images/logo.png" alt="#"></a>
+            <div class="menu d-flex justify-content-between align-items-center">
+                <ul class="navbar-nav d-flex justify-content-around align-items-center px-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eroor404.html"><i class="text-white">L'EQUIPE</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eroor404.html"><i class="text-white">LES ACTIVITES</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eroor404.html"><i class="text-white">NOS OFFRES</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eroor404.html"><i class="text-white">PLANNING</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./eroor404.html"><i class="text-white">LE BLOG</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index_3.html"><i class="text-white">CONTACT</i></a>
+                    </li>
+                </ul> 
+                <ul class="list-unstyled nav-item m-auto px-5">    
+                    <li class="d-inline-block nav-item">
+                        <a href="./eroor404.html" class="nav-link reseaux"><i class="text-white fa fa-mobile"> 05 59 47 84 18</i></a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled nav-item m-auto px-5">    
+                    <li class="d-inline-block nav-item">
+                        <a href="./eroor404.html" class="nav-link reseaux"><i class="text-white fa fa-facebook-square"></i></a>
+                    </li>
+                    <li class="d-inline-block nav-item">
+                        <a href="./eroor404.html" class="nav-link reseaux"><i class="text-white fa fa-instagram"></i></a>
+                    </li>
+                    <li class="d-inline-block nav-item">
+                        <a href="./eroor404.html" class="nav-link reseaux"><i class="text-white fa fa-tripadvisor"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <button class="burger"><span class="bar"></span></button>
+        </nav>
+    </header>
+
+    <!-------------------------Banner Img------------------------->
+    <div>
+        <img src="./images/visuel/visuel_2.jpg" class="img-fluid" alt="error :(">
+    </div>
+
+    <!-------------------------Formulaire------------------------->
+    <section>
+        <div class="container pt-5 pb-5">
+            <div class="row ">
+                <div class="col-md-4">
+                    <h4>NOS COORDONNÉES</h4><div class="underline_gold_contact"></div>
+                    <div class="txt-center">
+                        <p><strong>Studio Sport & Coaching</strong><br>01 Allée Marie Politzer<br> 64200 Biarritz</p>
+                        <p><strong>Téléphone</strong><br> 05 59 47 84 18</p>
+                        <p><strong>Horaires</strong><br>Du lundi au vendredi<br>de 8h à 14h, de 16h à 21h<br>Le samedi<br>de 10h à 13h</p>
+                        <p><strong>Email</strong><br>contact (at) lestudiobiarritz.com<br>ou via ce formulaire</p> 
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h4>FORMULAIRE DE CONTACT</h4><div class="underline_gold_contact"></div>
+
+                    <form method="GET" id="myForm">
+                        <div class="row g-3 pt-2">
+                            <div class="col-md-7">
+                                <div class="form-outline">
+                                    <input type="text" id="name" class="form-control bg-light" placeholder="VOTRE NOM"/>
+                                    <span id="error_name" class="fs_mbl"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="form-outline fs_mbl">
+                                    <input type="text" id="family" class="form-control bg-light " placeholder="VOTRE PRENOM"/>
+                                    <span id="error_family" class="fs_mbl"></span>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-5">
+                                <div class="form-outline">
+                                    <input type="email" id="mail" class="form-control bg-light" placeholder="VOTRE EMAIL"/>
+                                    <span id="error_mail" class="fs_mbl"></span> 
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="form-outline">
+                                    <input type="number" id="numeros" class="form-control bg-light" placeholder="VOTRE TELEPHONE"/>
+                                    <span id="error_numeros" class="fs_mbl"></span>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-12">
+                                <div class="form-outline">
+                                    <input type="text" id="sujet" class="form-control bg-light" placeholder="SUJET"/>
+                                    <span id="error_sujet" class="fs_mbl"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 pb-5">
+                                <div class="form-outline">
+                                    <textarea class="form-control bg-light" id="message" rows="3" placeholder="MESSAGE"></textarea>
+                                    <span id="error_message" class="fs_mbl"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit" value=" Envoyer" class="col-md-3 btn btn-dark btn-block"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-------------------------Map Link-------------------------> 
+    <div id="map-container-fluid-google-1">
+        <iframe class="map w-100 pb-0" style="padding-bottom: 0; height: 500px;"
+            src="https://maps.google.com/maps?q=1ssimplon+berre+l'etang&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+    </div>
+
+
+    <footer class="text-white">
+    <!-------------------------Link resaux + like and message------------------------->
+    <div class="container-fluid">
+        <div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 row-cols-lg-6">
+            <div class="container g-0 d-flex align-items-center justify-content-center">
+                <img src="./images/instagram/infos.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="icon" title="User Profile">
+                        <i class="fa fa-heart"></i>
+                        <a href="./eroor404.html"><i class="fa fa-comment text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-0 d-flex align-items-center justify-content-center">
+                <img src="./images/instagram/photos.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="icon" title="User Profile">
+                        <i class="fa fa-heart"></i>
+                        <a href="./eroor404.html"><i class="fa fa-comment text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-0 d-flex align-items-center justify-content-center">
+                <img src="./images/instagram/promos.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="icon" title="User Profile">
+                        <i class="fa fa-heart"></i>
+                        <a href="./eroor404.html"><i class="fa fa-comment text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-0 d-flex align-items-center justify-content-center">
+                <img src="./images/instagram/tutos.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="icon" title="User Profile">
+                        <i class="fa fa-heart"></i>
+                        <a href="./eroor404.html"><i class="fa fa-comment text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-0 d-flex align-items-center justify-content-center">
+                <img src="./images/instagram/videos.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="icon" title="User Profile">
+                        <i class="fa fa-heart"></i>
+                        <a href="./eroor404.html"><i class="fa fa-comment text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container g-0 d-flex align-items-center justify-content-center">
+                <img src="./images/instagram/infos.jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                    <div class="icon" title="User Profile">
+                        <i class="fa fa-heart"></i>
+                        <a href="./eroor404.html"><i class="fa fa-comment text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <!-------------------------Bloc Rgpd------------------------->
+   <section class="bloc_rgpd pt-5 bg-grey">
+    <div class="container mb-5 text-footer text-white text-footer">
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3">
+            <div class="col-md-4">
+                <ul class="list-unstyled text-white txt-center">
+                    <li class="logo-footer text-white d-flex align-items-center me-auto">
+                    <img src="./images/logo_footer.png" alt="error">
+                    <h5 class="my-font-family txt-center">A PROPOS</h5>
+                    <li>2018 © Studio Sport Biarritz</li>
+                    <li>Salle de sport, de fitness et de crossfit à</li>
+                    <li>Biarritz - RCS:000 000 000</li>
+                    <li >
+                        <a href="./eroor404.html" class="text-white">Mentions légales</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-white txt-center">STUDIO SPORT CORPORATE</h5>
+                <ul class="liste list-unstyled txt-center">
+                    <li>
+                        <a class="text-white text-decoration-none" href="./eroor404.html">-Studio Center : créez votre studio</a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none" href="./eroor404.html">-Offres Spéciales C.E.</a>
+                    </li>
+                    <li>
+                        <a class="text-white text-decoration-none" href="./eroor404.html">-Devenir partenaire</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-cols-md-12">
+                <ul class="my-font-family list-unstyled">
+                    <li class="d-flex align-items-center">
+                        <h5 class="txt-center">FITNESS, CROSSFIT ET TRAINNING AU PAYS BASQUES</h5>
+                    </li>
+                    <li class="txt-center ">Coach personnel de sport à Biarritz, <a class="text-white text-decoration-none" href="./eroor404.html">Coach personnel de sport Anglet</a>, Salle
+                    de sport Bayonne, Fitness à Biarritz, Fitness Ã  Anglet, Fitness sur le BAB,
+                    Autre mot clé + ville, Autre mot clé + ville</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark-strong text-white pt-4 pb-4">
+        <div class="row no-gutters text-white">
+            <div class="col text-end fs">Un site créé par<br>
+                <a href="./eroor404.html" target="_blank" class="text-decoration-none"><strong class="text-white">l’agence 364 Com’</strong></a>
+            </div>
+            <div class="col text-start align-self-center ">
+                <img src="./images/364.png" class="logo-footer" alt="error">
+            </div>
+        </div>
+    </div>
+</section>
+</footer>
+
+<!-------------------------Script------------------------->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script src="./main.js"></script> 
+</body>
+</html>
